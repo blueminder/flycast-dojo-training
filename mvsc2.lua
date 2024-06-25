@@ -167,7 +167,7 @@ function cbOverlay()
 
         ui.beginWindow("P2", math.floor((flycast.state.display.width * (3 / 4)) - 125),
             math.floor((flycast.state.display.height / 4) - 50), 250, 0)
-    
+        
         if MEMORY.read8(DC_MVC2_MEMORY_TABLE.p2_char1_active) == 1 then
             ui.text("* " .. CHARACTER[MEMORY.read8(DC_MVC2_MEMORY_TABLE.p2_char1_id) + 1])
         else
