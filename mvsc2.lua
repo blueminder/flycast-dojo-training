@@ -35,7 +35,6 @@ DC_MVC2_MEMORY_TABLE = {
 	['p2_char1_throw_counter_mash'] = 0x2C268B40,
 	['p2_char2_throw_counter_mash'] = 0x2C269688,
 	['p2_char3_throw_counter_mash'] = 0x2C26A1D0
-
 }
 
 CHARACTER = {"Ryu", "Zangief", "Guile", "Morrigan", "Anakaris", "Strider", "Cyclops", "Wolverine", "Psylocke", "Iceman",
