@@ -29,12 +29,12 @@ DC_MVC2_MEMORY_TABLE = {
     ['p2_char2_health'] = 0x2C26984C,
     ['p2_char3_health'] = 0x2C26A394,
     ['in_match'] = 0x2C289624,
-	['p1_char1_throw_counter_mash'] = 0x2C26859C,
-	['p1_char2_throw_counter_mash'] = 0x2C2690E4,
-	['p1_char3_throw_counter_mash'] = 0x2C269C2C,
-	['p2_char1_throw_counter_mash'] = 0x2C268B40,
-	['p2_char2_throw_counter_mash'] = 0x2C269688,
-	['p2_char3_throw_counter_mash'] = 0x2C26A1D0
+    ['p1_char1_throw_counter_mash'] = 0x2C26859C,
+    ['p1_char2_throw_counter_mash'] = 0x2C2690E4,
+    ['p1_char3_throw_counter_mash'] = 0x2C269C2C,
+    ['p2_char1_throw_counter_mash'] = 0x2C268B40,
+    ['p2_char2_throw_counter_mash'] = 0x2C269688,
+    ['p2_char3_throw_counter_mash'] = 0x2C26A1D0
 }
 
 CHARACTER = {"Ryu", "Zangief", "Guile", "Morrigan", "Anakaris", "Strider", "Cyclops", "Wolverine", "Psylocke", "Iceman",
