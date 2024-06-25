@@ -35,6 +35,7 @@ DC_MVC2_MEMORY_TABLE = {
     ['p2_char1_throw_counter_mash'] = 0x2C268B40,
     ['p2_char2_throw_counter_mash'] = 0x2C269688,
     ['p2_char3_throw_counter_mash'] = 0x2C26A1D0
+
 }
 
 CHARACTER = {"Ryu", "Zangief", "Guile", "Morrigan", "Anakaris", "Strider", "Cyclops", "Wolverine", "Psylocke", "Iceman",
@@ -103,15 +104,15 @@ function cbOverlay()
 
         if MEMORY.read8(DC_MVC2_MEMORY_TABLE.p1_char1_active) == 1 then
             ui.text("Character 1 Facing")
-			
+    	
             if MEMORY.read8(DC_MVC2_MEMORY_TABLE.p1_char1_facing_right) == 1 then
                 ui.rightText("Right")
             else
                 ui.rightText("Left")
             end
-			
+    	
             ui.text("Throw Counter Mash: ") 
-			ui.rightText(MEMORY.read8(DC_MVC2_MEMORY_TABLE.p1_char1_throw_counter_mash))
+            ui.rightText(MEMORY.read8(DC_MVC2_MEMORY_TABLE.p1_char1_throw_counter_mash))
         end
 
         if MEMORY.read8(DC_MVC2_MEMORY_TABLE.p1_char2_active) == 1 then
@@ -122,7 +123,7 @@ function cbOverlay()
                 ui.rightText("Left")
             end
             ui.text("Throw Counter Mash: ") 
-			ui.rightText(MEMORY.read8(DC_MVC2_MEMORY_TABLE.p1_char2_throw_counter_mash))
+            ui.rightText(MEMORY.read8(DC_MVC2_MEMORY_TABLE.p1_char2_throw_counter_mash))
         end
 
         if MEMORY.read8(DC_MVC2_MEMORY_TABLE.p1_char3_active) == 1 then
@@ -133,7 +134,7 @@ function cbOverlay()
                 ui.rightText("Left")
             end
             ui.text("Throw Counter Mash: ") 
-			ui.rightText(MEMORY.read8(DC_MVC2_MEMORY_TABLE.p1_char3_throw_counter_mash))
+            ui.rightText(MEMORY.read8(DC_MVC2_MEMORY_TABLE.p1_char3_throw_counter_mash))
         end
 
         ui.endWindow()
@@ -168,7 +169,7 @@ function cbOverlay()
 
         ui.beginWindow("P2", math.floor((flycast.state.display.width * (3 / 4)) - 125),
             math.floor((flycast.state.display.height / 4) - 50), 250, 0)
-		
+    
         if MEMORY.read8(DC_MVC2_MEMORY_TABLE.p2_char1_active) == 1 then
             ui.text("* " .. CHARACTER[MEMORY.read8(DC_MVC2_MEMORY_TABLE.p2_char1_id) + 1])
         else
@@ -203,7 +204,7 @@ function cbOverlay()
                 ui.rightText("Left")
             end
             ui.text("Throw Counter Mash: ") 
-			ui.rightText(MEMORY.read8(DC_MVC2_MEMORY_TABLE.p2_char1_throw_counter_mash))
+            ui.rightText(MEMORY.read8(DC_MVC2_MEMORY_TABLE.p2_char1_throw_counter_mash))
         end
 
         if MEMORY.read8(DC_MVC2_MEMORY_TABLE.p2_char2_active) == 1 then
@@ -214,7 +215,7 @@ function cbOverlay()
                 ui.rightText("Left")
             end
             ui.text("Throw Counter Mash: ") 
-			ui.rightText(MEMORY.read8(DC_MVC2_MEMORY_TABLE.p2_char2_throw_counter_mash))
+    	    ui.rightText(MEMORY.read8(DC_MVC2_MEMORY_TABLE.p2_char2_throw_counter_mash))
         end
 
         if MEMORY.read8(DC_MVC2_MEMORY_TABLE.p2_char3_active) == 1 then
@@ -225,7 +226,7 @@ function cbOverlay()
                 ui.rightText("Left")
             end
             ui.text("Throw Counter Mash: ") 
-			ui.rightText(MEMORY.read8(DC_MVC2_MEMORY_TABLE.p2_char3_throw_counter_mash))
+            ui.rightText(MEMORY.read8(DC_MVC2_MEMORY_TABLE.p2_char3_throw_counter_mash))
         end
 
         ui.endWindow()
