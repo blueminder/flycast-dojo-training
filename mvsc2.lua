@@ -104,13 +104,11 @@ function cbOverlay()
 
         if MEMORY.read8(DC_MVC2_MEMORY_TABLE.p1_char1_active) == 1 then
             ui.text("Character 1 Facing")
-    	
             if MEMORY.read8(DC_MVC2_MEMORY_TABLE.p1_char1_facing_right) == 1 then
                 ui.rightText("Right")
             else
                 ui.rightText("Left")
             end
-    	
             ui.text("Throw Counter Mash: ") 
             ui.rightText(MEMORY.read8(DC_MVC2_MEMORY_TABLE.p1_char1_throw_counter_mash))
         end
