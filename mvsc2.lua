@@ -47,8 +47,8 @@ CHARACTER = {"Ryu", "Zangief", "Guile", "Morrigan", "Anakaris", "Strider", "Cycl
              "Captain Commando", "Bone Wolverine", "Servbot"}
 
 STAGES = {"Airship", "Desert", "Industrial", "Circus", "Swamp", "Cavern", "Clock Tower", "River", "Abyss Temple",
-          "Airship (Alt)", "Desert (Alt)", "Circus (Alt)", "Swamp (Alt)", "Cavern (Alt)", "Clock Tower (Alt)",
-          "River (Alt)"}
+          "Airship (Alt)", "Training", "Desert (Alt)", "Circus (Alt)", "Swamp (Alt)", "Cavern (Alt)",
+          "Clock Tower (Alt)", "River (Alt)"}
 
 function cbStart()
     local s = flycast.state
