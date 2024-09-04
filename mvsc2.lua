@@ -40,7 +40,7 @@ CHARACTER = {"Ryu", "Zangief", "Guile", "Morrigan", "Anakaris", "Strider", "Cycl
              "Captain Commando", "Bone Wolverine", "Servbot"}
 
 STAGES = {"Airship", "Desert", "Industrial", "Circus", "Swamp", "Cavern", "Clock Tower", "River", "Abyss Temple",
-          "Airship (Alt)", "Training", "Desert (Alt)", "Circus (Alt)", "Swamp (Alt)", "Cavern (Alt)",
+          "Airship (Alt)", "Desert (Alt)", "Training", "Circus (Alt)", "Swamp (Alt)", "Cavern (Alt)",
           "Clock Tower (Alt)", "River (Alt)"}
 
 function cbStart()
@@ -63,7 +63,7 @@ function cbOverlay()
         ui.rightText(MEMORY.read8(DC_MVC2_MEMORY_TABLE.game_timer))
 
         ui.text("Stage")
-        ui.rightText(STAGES[MEMORY.read8(DC_MVC2_MEMORY_TABLE.stage_id)])
+        ui.rightText(STAGES[MEMORY.read8(DC_MVC2_MEMORY_TABLE.stage_id) + 1])
         ui.endWindow()
 
         ui.beginWindow("P1", math.floor((flycast.state.display.width / 4) - 125),
